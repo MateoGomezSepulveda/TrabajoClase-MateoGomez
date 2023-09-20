@@ -1,0 +1,104 @@
+body {
+    background-color: #000;
+}
+
+.navbar {
+    display: flex;
+    width: 1920px;
+    background-color: aliceblue;
+    height: 61px;
+}
+
+.logo img {
+    padding: 1px;
+    height: 60px;
+}
+
+.titulo {
+    
+    width: 120px;
+    display: flex;
+    padding: 10px;
+}
+
+.titulo li{
+    display: flex;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lista-1 {
+    
+    padding: 20px;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-1 li{
+    display: flex;
+    text-decoration: none;
+    font-size:larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lista-2{
+    
+    padding: 20px;
+    width: 600px;
+    margin-left: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-2 li{
+    display: flex;
+    text-decoration: none;
+    font-size:larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.boton {
+    width: 160px;
+}
+
+.boton button{
+    background-color: rgb(38, 38, 255);
+    width: 150px;
+    padding: 15px;
+    font-size:larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: aliceblue;
+}
+
+.main-content{
+    background-color: aqua;
+    display: flex;
+    padding: 300px;
+    padding-top: 100px;
+    padding-right: 400px;
+    padding-left: 600px;
+}
+
+.texto-1 {
+    background-color:blue;
+    display: flex;
+    width: 800px;
+    padding-left: 10px;
+    padding-right: 120px;
+    
+}
+
+.texto-1 li{
+    display: flex;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    text-align: center;
+}
+
+.texto-2 {
+    background-color: aliceblue;
+    padding: 120px;
+    top: 450px;
+}
+

@@ -1,0 +1,136 @@
+body {
+  background-color: #000;
+}
+
+.navbar {
+  display: flex;
+  width: 1920px;
+  background-color: aliceblue;
+  height: 61px;
+}
+
+.logo img {
+  padding: 1px;
+  height: 60px;
+}
+
+.titulo {
+  
+  width: 120px;
+  display: flex;
+  padding: 10px;
+}
+
+.titulo li{
+  display: flex;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lista-1 {
+  
+  padding: 20px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lista-1 li{
+  display: flex;
+  text-decoration: none;
+  font-size:larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.lista-2{
+  
+  padding: 20px;
+  width: 600px;
+  margin-left: 380px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lista-2 li{
+  display: flex;
+  text-decoration: none;
+  font-size:larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.boton1 {
+  width: 160px;
+}
+
+.boton1 button{
+  background-color: rgb(38, 38, 255);
+  width: 150px;
+  padding: 15px;
+  font-size:larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: aliceblue;
+}
+
+.main-content{
+  background-color: #241e1e;
+  display: flex;
+  padding: 800px;
+  padding-top: 100px;
+  padding-right: 400px;
+  padding-left: 600px;
+}
+
+.texto-1 {
+  display: flex;
+  width: 900px;
+  padding-left: 1px;
+  padding-right: 1px;
+  
+}
+
+.texto-1 li{
+  padding-right: 1px;
+  display: flex;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: aliceblue;
+  text-align: center;
+}
+
+.texto-2 {
+  width: 900px;
+  color:aliceblue;
+  padding: 1px;
+  top: 390px;
+  position: absolute;
+  text-align: center;
+}
+
+.texto-2 li {
+  display: flex;
+  font-size: 18px;
+}
+
+.boton2{
+  left: 900px;
+  position: absolute;
+  top: 470px;
+}
+
+.boton2 button{
+  font-size: 22px;
+  color: #000;
+  background-color: rgb(67, 67, 255);
+  width: 280px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Video {
+  background-color: cadetblue;
+  position: absolute;
+  top: 590px;
+  width: 900px;
+  bottom: 100px;
+}
+
+

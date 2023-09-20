@@ -1,0 +1,104 @@
+.navbar {
+    display: flex;
+    background-color: black;
+    padding-top: 2vw;
+    justify-content: space-between;
+}
+
+.texto-1 {
+    display: flexbox;
+    margin-bottom: 2vw;
+    padding-left: 100px;
+}
+
+.texto-1 li {
+    color: aliceblue;
+    display: flex;
+    font-size: 2vw;
+}
+
+.texto-2 {
+    display: flexbox;
+    margin-bottom: 2vw; 
+}
+.texto-2 li {
+    color: aliceblue;
+    display: flex;
+    font-size: 2vw;
+}
+
+.texto-3 {
+    display: flexbox;
+    margin-bottom: 2vw;
+    padding-right: 200px;
+}
+.texto-3 li {
+    color: aliceblue;
+    display: flex;
+    font-size: 2vw;
+}
+
+.main img{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.main-texto1 {
+    display: flex;
+    position: absolute;
+    width: 40vw;
+    top: 11vw;
+    left: 36vw;
+    font-size: 2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: orange;
+}
+
+.main-texto2 {
+    display: flex;
+    position: absolute;
+    width: 79vw;
+    top: 19vw;
+    left: 11vw;
+    font-size: 1.4vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: orange;
+}
+
+.cards {
+    position: absolute;
+    width: 300px; /* Ancho de la tarjeta */
+    border: 5px solid #f36107; /* Borde de la tarjeta */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra de la tarjeta */
+    margin: 20px; /* Margen exterior */
+    padding: 20px; /* Espaciado interior */
+    text-align: center; /* Alineación del contenido */
+    background-color: #fff; /* Color de fondo de la tarjeta */
+    top: 26vw;
+    left: 11vw;
+}
+
+/* Estilos para la imagen dentro de la tarjeta */
+.cards img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos para el contenido de la tarjeta */
+.cards-content {
+    padding: 20px;
+}
+
+/* Estilos para el título de la tarjeta */
+.cards-content h2 {
+    font-size: 1.5rem; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+/* Estilos para el párrafo de la tarjeta */
+.cards-content p {
+    font-size: 1rem; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+}
+

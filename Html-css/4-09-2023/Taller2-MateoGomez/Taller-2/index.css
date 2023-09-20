@@ -1,0 +1,15 @@
+.articulo-container {
+    display: flex;
+    margin: 40px;
+    flex-direction: row column;
+    justify-content: space-between;
+}
+
+.articulo-container img{
+    display: flexbox;
+    justify-content: space-between;
+}
+
+
+
+

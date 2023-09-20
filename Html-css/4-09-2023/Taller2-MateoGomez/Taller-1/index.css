@@ -1,0 +1,8 @@
+.flex-container {
+    display: flex;
+    flex-direction: row column;
+    justify-content: space-between;
+    background-color: aqua;
+    font-size: x-large;
+
+}
