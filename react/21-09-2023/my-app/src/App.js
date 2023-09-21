@@ -1,7 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import ParentChildren from './ParentComponent';
-import ParentComponent from './ParentComponent';
 
 function App() {
   return (
@@ -9,9 +7,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Esta funcionando en v2
+          Edit <code>src/App.js</code> and save to reload.
         </p>
-        <ParentComponent></ParentComponent>
         <a
           className="App-link"
           href="https://reactjs.org"
