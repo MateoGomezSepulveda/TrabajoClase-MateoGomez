@@ -1,18 +1,19 @@
-function TareaList(props) {
+import React from 'react';
+import Tarea from './Tarea';
+
+const TareaList = ({ tareas, updateTarea, deleteTarea}) =>{
     return(
         <div>
-            <h2>Lista de tareas</h2>
-            <ul>
-                {props.tareas.map((tarea) =>(
-                    <li key={tarea.id}>
-                        {tarea.title} - Estado: {tarea.state}
-                        <button onClick={() => props.onEdit(tarea.id)}>Editar</button>
-                        <button onClick={() => props.onDelete(tarea.id)}>Eliminar</button>
-                    </li>
-                ))}
-            </ul>
+            {tareas.map((tarea) =>(
+                <Tarea
+                    key={tareas.id}
+                    tarea={tarea}
+                    updateTarea={updateTarea}
+                    deleteTarea={deleteTarea}
+                />
+            ))}
         </div>
-    )
-}
+    );
+};
 
 export default TareaList;

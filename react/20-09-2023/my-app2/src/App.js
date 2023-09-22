@@ -1,30 +1,49 @@
-import './App.css';
+import React, {Component} from 'react'
+import TareaForm from './components/TareaForm';
+import TareaList from './components/TareaList';
 
-function App() {
-  const [tareas, colocarTareas] = useState(tareasData);
+class App extends Component{
+  constructor(){
+    super();
+    this.state = {
+      tareas: [],
+    };
+  }
 
-  const [editarTarea, colocarEditarTarea] = useState(null);
-
-  const manejarAddTareas = (nuevaTarea) =>{
-    colocarTareas([...tareas, {...nuevaTarea, id: tareas.length + 1}]);
+  addTarea = (nuevaTarea) => {
+    this.setState((prevState) =>({
+      tareas: [...prevState.tareas, nuevaTarea],
+    }));
   };
-
-  const manejarEditTareas = (tareasId, updatedTask) =>{
-
+  
+  updateTarea = (tareaId, updatedTarea) => {
+    this.setState((prevState) =>({
+      tareas: prevState.tareas.map((tarea) =>
+        tarea.id === tareaId ?  updatedTarea: tarea
+      ),
+    }));
   };
-
-  const manejarDeleteTreas = (tareasId) =>{
-
+  
+  deleteTarea = (tareaId) => {
+    this.setState((prevState) =>({
+      tareas: prevState.tareas.filter((tarea) => tarea.id !== tareaId),
+    }));
   };
-
-  return(
-    <div className="App">
-      <h1>Aplicaion de Gestion de tareas</h1>
-      <TareaForm onAdd={manejarAddTareas} />
-      <TareaList tarea={tareas} onEdit={manejarEditTareas} onDelete={manejarDeleteTreas} />
-    </div>
-  )
+  
+  render(){
+    return(
+      <div className='App'>
+        <h1>Lista de Tareas</h1>
+        <TareaForm addTarea={this.addTarea} />
+        <TareaList
+          tareas={this.state.tareas}
+          updateTarea={this.updateTarea}
+          deleteTarea={this.deleteTarea}
+        />
+      </div>
+    );
+  }
 }
 
-
 export default App;
+
