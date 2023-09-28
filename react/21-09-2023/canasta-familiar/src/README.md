@@ -1,0 +1,2 @@
+Un cliente require que se cree una aplicacion de tipo SPA en ReactJs, la cual pueda gestionar la revision, modificacion actualizacion y eliminacion de la canasta familiar. Dicha aplicacion debera tener un estado para almacenar la lista de productos, un campo de entrada de texto para agregar los nuevos productos tendran atributos de nombre, un booleano de la compra realizada y una funcion para eliminar dicho producto.
+
