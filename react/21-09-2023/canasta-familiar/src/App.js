@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ListaProducto from './components/ListaProducto';
+import AddProducto from './components/AddProducto';
 
 function App(){ 
 
@@ -30,7 +31,7 @@ function App(){
     <div>
       <h1>Canasta Familiar</h1>
       {/* Componente para agregar Productos */}
-      
+      <AddProducto addProdcuto={addProducto}/>
       {/* Componente para mostrar la lista de productos */}
       <ListaProducto
       listaProducto={listaProducto}
