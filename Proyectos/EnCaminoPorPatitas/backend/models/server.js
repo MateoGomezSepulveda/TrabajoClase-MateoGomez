@@ -9,14 +9,14 @@ class Server {
         this.port = process.env.PORT
 
         this.paths = {
-            usuarioPath: '/api/usuario',
+            usuarioPath: '/api/usuarios',
         }
+
+        this.middlewares();
 
         this.ConnectDB();
 
         this.routes();
-
-        this.middlewares();
     }
     async ConnectDB(){
         await dbConnection();
@@ -27,6 +27,7 @@ class Server {
 
         this.app.use(cors());
     }
+
     routes(){
         this.app.use(this.paths.usuarioPath, require("../routes/usuario.routes.js"));
     }
