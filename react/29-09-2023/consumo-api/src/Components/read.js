@@ -38,12 +38,17 @@ export default function Read(){
 
     return(
         <div>
+            <Link to='/create'>
+            <Button>
+                crear
+            </Button>
+            </Link>
             <Table singleLine>
                 <Table.Header>
                     <Table.Row>
                         <Table.HeaderCell>Nombre</Table.HeaderCell>
                         <Table.HeaderCell>Apellido</Table.HeaderCell>
-                        <Table.HeaderCell>Checkbox Validado</Table.HeaderCell>
+                        <Table.HeaderCell>Checkbox</Table.HeaderCell>
                         <Table.HeaderCell>Actualizar</Table.HeaderCell>
                         <Table.HeaderCell>Eliminar</Table.HeaderCell>
                     </Table.Row>

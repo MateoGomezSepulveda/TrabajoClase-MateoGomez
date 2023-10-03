@@ -9,14 +9,14 @@ export default function Read(){
     useEffect(()=>{
         axios.get(`http://localhost:8033/api/usuarios`)
         .then((response)=>{
-            console.log(response.data);
-            setAPIData(response.data);
+            console.log(response.data.usuarios);
+            setAPIData(response.data.usuarios);
         })
     },[]);
 
     const setData = (data) =>{
-        let {id, nombre, email, password, rol} = data;
-        localStorage.setItem('ID', id);
+        let {_id, nombre, email, password, rol} = data;
+        localStorage.setItem('ID', _id);
         localStorage.setItem('Nombre', nombre);
         localStorage.setItem('Email', email);
         localStorage.setItem('Password', password);
@@ -30,8 +30,9 @@ export default function Read(){
         })
     };
 
-    const onDelete = (id) =>{
-        axios.delete(`http://localhost:8033/api/usuarios/${id}`)
+    const onDelete = (_id) =>{
+        console.log(_id);
+        axios.delete(`http://localhost:8033/api/usuarios/${_id}`)
         .then(()=>{
             getData();
         })
@@ -39,25 +40,31 @@ export default function Read(){
 
     return(
         <div>
+            <Link to='/crear'>
+                <Table.Cell>
+                    <Button>Crear</Button>
+                </Table.Cell>
+            </Link>
             <Table singleLine>
                 <Table.Header>
                     <Table.Row>
                         <Table.HeaderCell>ID</Table.HeaderCell>
                         <Table.HeaderCell>Nombre</Table.HeaderCell>
                         <Table.HeaderCell>Email</Table.HeaderCell>
-                        <Table.HeaderCell>Password</Table.HeaderCell>
                         <Table.HeaderCell>Rol</Table.HeaderCell>
+                        <Table.HeaderCell>Actualizar</Table.HeaderCell>
+                        <Table.HeaderCell>Delete</Table.HeaderCell>
                     </Table.Row>
                 </Table.Header>
             <Table.Body>
                 {
-                    Array.isArray(APIData) ? (
+                    
                         APIData.map((data)=>{
                             return(
                                 <Table.Row>
+                                    <Table.Cell>{data._id}</Table.Cell>
                                     <Table.Cell>{data.nombre}</Table.Cell>
                                     <Table.Cell>{data.email}</Table.Cell>
-                                    <Table.Cell>{data.passowrd}</Table.Cell>
                                     <Table.Cell>{data.rol}</Table.Cell>
                                     <Link to='/update'>
                                         <Table.Cell>
@@ -65,16 +72,11 @@ export default function Read(){
                                         </Table.Cell>
                                     </Link>
                                         <Table.Cell>
-                                            <Button onClick={() => onDelete(data.id)}>Delete</Button>
+                                            <Button onClick={() => onDelete(data._id)}>Delete</Button>
                                         </Table.Cell>
                                 </Table.Row>
                             )
-                        })
-                    ):(
-                        <p></p>
-                    )
-                    
-                    
+                        })     
                 }
             </Table.Body>
             </Table>

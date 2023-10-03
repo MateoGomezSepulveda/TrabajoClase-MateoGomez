@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <div className='main'>
-        <h2 className='main-header'>Trabajo de CL</h2>
+        <h2 className='main-header'>Usuarios</h2>
         <div style={{marginTop:20}}>
           <Route exact path='/' component={Read}></Route>
         </div>

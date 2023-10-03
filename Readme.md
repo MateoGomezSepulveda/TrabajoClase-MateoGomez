@@ -1,5 +1,20 @@
-Mi nombre es Mateo Gomez Sepulveda, tengo 23 años y tengo un emprendimiento de venta de quesos.
+Nombre: Mateo Gomez Sepulveda 
+Grupo:Artemis V2
 
-Empece a estudiar programacion aproximadamente hace tres años en las unidades tecnologicas de santander. Cuando decidi tomar la decision de entrar a CAMPUS me toco dejar de lado mi universdad. Tome esta decision por que no me alcanzaba el tiempo para hacer las dos cosas al mismo tiempo, ademas que en ese momento tambien trabaja en un restaurante, simplemente tener un emprendimiento y trabajar y estudiar es un poco complejo y sentia que no estaba rindiendo en ninguna de las tres cosas que hacia, entonces decidi salirme de la universidad y como no me estaba yendo tambien en CAMPUS debido a la cantidad de tiempo que invertia tambien me toco salirme de trabajar en el restaurante para poder rendir un poco mas en CAMPUS.
 
-me gusta mucho salir y conocer lugares y pueblitos, me gusta mucho el arte pues me concidero una persona muy apansionada por el , me gusta tocar guitarra, pintar, dibujar. Espero mucho aprender con el trainer y poder rendir al cien porciento.
+| Título          | Descripción                                                           | Fecha       |
+| --------------- | ----------------------------------------------------------------------| ----------- |
+|react/18-09-2023/my-app | pasar dropbox realziado en html y css a componentes |  18/09/2023 |
+|react/19-09-2023/my-app | En esta clase vimos el uso de los estados en react  |  19/09/2023 |
+|react/19-09-2023/my-app2| se deja como trabajo en clase crear un crud en react que nos permita crear actualizar y eliminar | 20/09/2023 |
+|react/20-09-2023 |en clase vemos teoria sobre usos de estados y props, se deja trabajo en clase sobre una lista de tareas en lso cruds. | 20/09/2023 |
+|react/21-09-2023/canasta-familiar | En clase vemos clase de teoria sobre ciclos de vida de los componentes, y se deja un trabajo en clase sobre cansata familiar, se crea un SPA para revisar modificar y eliminar sobre productos de canasta familiar| 21/09/2023 |
+|react/22-09-2023/practica-rutas| En esta clase vemos teoria sobre las rutas  y vemos React Router para el manejo de cambios de canasta-familiar | 22/09/2023 |
+|react/22-09-2023/canasta-familiar| Se deja un trabajo sobre el proyecto pasado de canasta familiar y agregarle las rutas y manejo de React Router | 22/09/2023 |
+|react/25-09-2023/memo | ejericio sobre memo | 25/09/2023 |
+|react/27-09-2023  |                        |27/09/2023 |
+|react/29-09-2023/consumo-api | consumo de api con React Hooks y Map - terminacion sobre consumo de api y tenemos que implementarlo a una API propia | 29/09/2023 |
+
+
+
+

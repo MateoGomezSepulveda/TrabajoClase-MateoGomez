@@ -7,6 +7,7 @@ const { validateDocuments } = require('../middlewares/validate.documents.js');
 const router = Router();
 
 router.get("/", getUsuario);
+
 router.post("/", [
     check('nombre', 'Nombre no es valido').not().isEmpty(),
     check('password', 'El password debe ser minimo de 6 letras').isLength({min:6}),

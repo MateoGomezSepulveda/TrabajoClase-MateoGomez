@@ -3,15 +3,24 @@ import React, {useState, useEffect} from 'react';
 import {Button,Checkbox, Form} from 'semantic-ui-react';
 import { useHistory } from 'react-router';
 
-export default function Create(){
+export default function Update(){
     let history = useHistory();
     const [id, setID] = useState(null);
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
     const [checkbox, setCheckbox] = useState(false);
 
-    const postAPIData = ()=>{
-        axios.post(`https://60fbca4591156a0017b4c8a7.mockapi.io/fakeData`,{
+    useEffect(()=>
+    {
+        setID(localStorage.getItem('ID'));
+        setFirstName(localStorage.getItem('Nombre'));
+        setLastName(localStorage.getItem('Apellido'));
+        setCheckbox(localStorage.getItem('Autorizacion'));
+
+    },[]);
+
+    const updateAPIData = ()=>{
+        axios.put(`https://60fbca4591156a0017b4c8a7.mockapi.io/fakeData/${id}`,{
             firstName,
             lastName,
             checkbox
@@ -36,7 +45,7 @@ export default function Create(){
 
                     </Checkbox>
                 </Form.Field>
-                <Button type="submit" onClick={postAPIData}>Crear</Button>
+                <Button type="submit" onClick={updateAPIData}>Actualizar</Button>
             </Form>
         </div>
     )
